@@ -17,7 +17,9 @@
     "type-check:watch": "npm run type-check -- --watch",
     "build": "cross-env NODE_ENV=production webpack && node utils/deploy.js",
     "start": "webpack-dev-server --progress",
-    "analyze-bundle": "cross-env ANALYZE=true NODE_ENV=production webpack-cli --display-reasons"
+    "analyze-bundle": "cross-env ANALYZE=true NODE_ENV=production webpack-cli --display-reasons",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "@babel/runtime-corejs3": "7.10.2",
@@ -53,7 +55,8 @@
     "slim-select": "1.26.0",
     "styled-components": "5.1.1",
     "styled-icons": "10.2.1",
-    "throttle-debounce": "2.2.1"
+    "throttle-debounce": "2.2.1",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@babel/cli": "7.10.1",
@@ -111,5 +114,6 @@
   },
   "author": {
     "name": "QuestDB"
-  }
+  },
+  "snyk": true
 }
