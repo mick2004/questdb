@@ -20,7 +20,7 @@
     "analyze-bundle": "cross-env ANALYZE=true NODE_ENV=production webpack-cli --display-reasons"
   },
   "dependencies": {
-    "@babel/runtime-corejs3": "7.10.2",
+    "@babel/runtime-corejs3": "7.26.10",
     "@fortawesome/fontawesome-free": "5.13.0",
     "@popperjs/core": "2.4.2",
     "@questdb/sql-grammar": "1.0.5",
